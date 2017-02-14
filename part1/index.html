@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="intro">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.js"></script>
+
+    <script src="main.js"></script>
+
+  </head>
+  <body ng-controller="master">
+
+    <h1>{{message}}</h1>
+
+    <button ng-click="printMessage($event)">click for printed message</button>
+
+    <h1 ng-show="show" >Here is another HEADER</h1>
+
+    <button ng-click="show =! show" type="button" name="button">Add another Header</button>
+
+    <button ng-click="printList =! printList">Click this button for a list</button>
+
+
+      <ul ng-show="printList"> Here is the Hidden unordered list!
+        <li>List item number 1</li>
+        <li>List item number 2</li>
+        <li>List item number 3</li>
+      </ul>
+
+  </body>
+</html>

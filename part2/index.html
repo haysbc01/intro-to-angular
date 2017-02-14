@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="part2">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular: Part 2</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.js"></script>
+
+    <script src="main.js"></script>
+
+  </head>
+  <body ng-controller="master">
+    <h1>Welcome to Part 2</h1>
+
+    <h2 ng-mouseenter="exclamation =! exclamation" ng-mouseleave="exclamation =! exclamation" >Paragraph Heading 1<span ng-show="exclamation">!</span></h2>
+    <p ng-class="{'selected' : changeColor}" ng-mouseenter="changeColor =! changeColor" ng-mouseleave="changeColor =! changeColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis augue eu velit sodales malesuada in eget erat. Duis et dignissim ligula. Praesent mattis, urna in placerat cursus, nisl ipsum suscipit eros, eu consectetur enim sapien vitae mauris. Etiam at pellentesque elit, quis hendrerit quam. Quisque in pretium nunc, a efficitur nulla. Duis varius elit cursus commodo consectetur. Nulla nec orci condimentum, imperdiet nisl vel, egestas tellus. Duis dapibus blandit neque. Quisque interdum mollis mi, non varius urna egestas a. Suspendisse rutrum magna vel eros dignissim posuere. Sed nec mattis mauris, vitae placerat diam.</p>
+    <a ng-click="leavePage($event)" href="https://www.google.com/">{{link}}</a>
+
+    <h2 ng-mouseenter="exclamation2 =! exclamation2" ng-mouseleave="exclamation2 =! exclamation2" >Paragraph Heading 2<span ng-show="exclamation2">!</span></h2>
+    <p ng-class="{'selected' : changeColor2}" ng-mouseenter="changeColor2 =! changeColor2" ng-mouseleave="changeColor2 =! changeColor2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna id neque eleifend malesuada vitae vel diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sit amet tincidunt mauris, eget cursus leo. Vivamus eget dolor ante. Donec sed vestibulum quam. Fusce quam est, scelerisque elementum molestie et, pellentesque in massa. Nulla consectetur velit mauris, eu ultrices justo faucibus cursus. Praesent laoreet arcu non neque dignissim mollis. Aliquam tristique diam lacus, maximus finibus mi varius eu. Etiam et enim nec odio pellentesque blandit.</p>
+    <a ng-click="leavePage2($event)" href="https://www.google.com/">{{link2}}</a>
+
+    <h2 ng-mouseenter="exclamation3 =! exclamation3" ng-mouseleave="exclamation3 =! exclamation3" >Paragraph Heading 3<span ng-show="exclamation3">!</span></h2>
+    <p ng-class="{'selected' : changeColor3}" ng-mouseenter="changeColor3 =! changeColor3" ng-mouseleave="changeColor3 =! changeColor3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna id neque eleifend malesuada vitae vel diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sit amet tincidunt mauris, eget cursus leo. Vivamus eget dolor ante. Donec sed vestibulum quam. Fusce quam est, scelerisque elementum molestie et, pellentesque in massa. Nulla consectetur velit mauris, eu ultrices justo faucibus cursus. Praesent laoreet arcu non neque dignissim mollis. Aliquam tristique diam lacus, maximus finibus mi varius eu. Etiam et enim nec odio pellentesque blandit.</p>
+    <a ng-click="leavePage3($event)" href="https://www.google.com/">{{link3}}</a>
+
+
+
+
+  </body>
+</html>

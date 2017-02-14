@@ -1,0 +1,29 @@
+.button {
+  height: 200px;
+  width: 400px;
+  background-color: green;
+  font-size: 80px;
+  color: red;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.pop {
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.popUp {
+  color: white;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  border-radius: 5px;
+  background: black;
+}
